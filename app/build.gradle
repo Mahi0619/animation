@@ -1,0 +1,188 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+}
+
+android {
+    namespace 'com.anime.application'
+    compileSdk 35
+
+    flavorDimensions "mode"
+
+    defaultConfig {
+        applicationId "com.anime.application"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        dataBinding {
+            enabled = true
+        }
+        useLibrary 'org.apache.http.legacy'
+        packagingOptions {
+            exclude 'META-INF/DEPENDENCIES'
+            exclude 'META-INF/LICENSE'
+            exclude 'org/bouncycastle/x509/CertPathReviewerMessages_de.properties'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true  // Enable BuildConfig generation
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("C:/Users/MrDev/Desktop/Assignment/transaction.jks")
+            storePassword project.findProperty("11601122") ?: "11601122"
+            keyAlias "transaction"
+            keyPassword project.findProperty("11601122") ?: "11601122"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+        }
+
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+    }
+
+    productFlavors {
+        releaseFlavor {
+            dimension "mode"
+            applicationIdSuffix ".release"
+            versionNameSuffix "-release"
+            buildConfigField "String", "BASE_URL", '"https://api.prepstripe.com/"'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+    // Core Libraries
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Dagger Hilt
+    implementation "com.google.dagger:hilt-android:2.50"
+    implementation 'androidx.test.ext:junit-ktx:1.2.1'
+    implementation 'androidx.activity:activity:1.10.0'
+    kapt "com.google.dagger:hilt-compiler:2.50"  // Ensure using kapt for annotation processing
+    kapt "com.google.dagger:hilt-android-compiler:2.50"  // Use this for Hilt components
+
+    // Kotlin Extensions (KTX)
+    implementation 'androidx.activity:activity-ktx:1.8.2'
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0"
+
+    // Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+
+    // Retrofit & Gson
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
+
+    // Biometric Authentication
+    implementation 'androidx.biometric:biometric:1.2.0-alpha05'
+
+    // Navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.7'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.7'
+
+    // Dimensions & Scaling
+    implementation "com.intuit.sdp:sdp-android:1.0.6"
+    implementation "com.intuit.ssp:ssp-android:1.0.6"
+
+    // Lottie Animation
+    implementation "com.airbnb.android:lottie:3.4.0"
+
+    // Data Binding Runtime
+    implementation 'androidx.databinding:databinding-runtime:8.3.0'
+
+    // GIF Support
+    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.17"
+
+    // Swipe Refresh Layout
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    // Multidex & Encryption
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha03'
+
+    // Google Play Services
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+    // Testing dependencies
+    testImplementation "org.mockito:mockito-core:3.12.4"
+    testImplementation "org.mockito:mockito-inline:3.12.4"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3"
+
+    // UI Testing dependencies
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test:runner:1.5.2"
+    androidTestImplementation "org.mockito:mockito-android:3.12.4"
+    androidTestImplementation "org.mockito:mockito-core:3.12.4"
+    androidTestImplementation "org.mockito:mockito-inline:3.12.4"
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3"
+
+    // Hilt Testing dependencies
+    androidTestImplementation "com.google.dagger:hilt-android-testing:2.50"  // for Hilt test integration
+
+    // Hilt ViewModel Testing (for testing ViewModels with Hilt)
+    androidTestImplementation "androidx.hilt:hilt-lifecycle-viewmodel:2.1.0"  // Stable version for ViewModel testing
+
+    // Regular Hilt Testing dependencies (for non-UI tests)
+    testImplementation "com.google.dagger:hilt-android-testing:2.50"
+
+    // Hilt Testing extension for Mockk or Mockito
+    androidTestImplementation "org.mockito:mockito-android:3.11.2" // Example, you can use Mockk too.
+    testImplementation "org.robolectric:robolectric:4.9.1"
+
+    // Room dependencies
+    implementation "androidx.room:room-runtime:2.6.1" // Room runtime
+    kapt "androidx.room:room-compiler:2.6.1"  // Room annotation processor
+    implementation "androidx.room:room-ktx:2.6.1"  // Room KTX for coroutine support
+
+    /Picasso/
+    implementation ("com.squareup.picasso:picasso:2.71828")
+    implementation ("com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0")
+    implementation ("com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.1")
+
+}

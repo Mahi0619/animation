@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AnimationApplication" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item> <!-- Adjust colorPrimaryDark -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/lexend_variable_font_wght</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+    <style name="TextViewSubHeading" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/txt_normal</item>
+
+    </style>
+
+
+
+
+
+
+    <!-- Style for TextView -->
+    <style name="TextViewHeading" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/txt_normal</item>
+    </style>
+
+    <!-- Style for Button -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/input_and_textview</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/smallTextSize</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textSize">@dimen/smallTextSize</item>
+    </style>
+
+</resources>

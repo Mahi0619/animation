@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="no_network_availabiity">No internet connectivity</string>
+
+
+
+    <!-- Dashboard strings -->
+
+    <string name="transaction_search_by_category">Search by category</string>
+
+
+
+    <!-- server strings-->
+    <string name="internal_server_error">Internal Server Error</string>
+    <string name="something_went_wrong_error">Something went wrong. Please try again</string>
+    <string name="session_expired_msg">Session expired. Please log in again.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

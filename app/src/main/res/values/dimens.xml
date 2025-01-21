@@ -1,0 +1,149 @@
+<resources>
+    <!-- Login Screen dimens-->
+    <dimen name="login_form_margin_left_right">16dp</dimen>
+    <dimen name="padding_login_form">16dp</dimen>
+    <dimen name="login_margin_top">10dp</dimen>
+    <dimen name="login_padding_edittext">8dp</dimen>
+    <dimen name="login_text_size_logo">28sp</dimen>
+    <dimen name="login_fields_form_margin">30dp</dimen>
+    <dimen name="login_fields_margin">30dp</dimen>
+    <dimen name="login_padding_button">8dp</dimen>
+
+    <!--Dashboard Screen -->
+    <dimen name="padding_button_layout">10dp</dimen>
+    <dimen name="padding_buttons">10dp</dimen>
+    <dimen name="btn_text_size">16sp</dimen>
+
+    <!-- StationView -->
+    <dimen name="station_title_size">18sp</dimen>
+
+
+    <!-- Linker screen -->
+    <dimen name="linker_margin_top">10dp</dimen>
+    <dimen name="linker_margin_bottom">10dp</dimen>
+    <dimen name="linker_padding_button">16dp</dimen>
+    <dimen name="linker_btn_left_margin">50dp</dimen>
+    <dimen name="linker_btn_right_margin">50dp</dimen>
+    <dimen name="scan_code_text_size">18sp</dimen>
+
+    <!-- Loader screen -->
+    <dimen name="loader_margin_top">40dp</dimen>
+    <dimen name="loader_margin_bottom">20dp</dimen>
+    <dimen name="loader_margin_top_bottom">60dp</dimen>
+    <dimen name="loader_spinner_margin">30dp</dimen>
+    <dimen name="loader_code_margin">10dp</dimen>
+    <dimen name="code_value_margin_top">10dp</dimen>
+    <dimen name="generate_code_padding_button">10dp</dimen>
+    <dimen name="code_title_text_size">19sp</dimen>
+    <dimen name="code_value_text_size">18sp</dimen>
+    <dimen name="detail_info_text_size">16sp</dimen>\
+
+
+    <!--Text size      -->
+    <dimen name="txt_action_bar_title">@dimen/_18sdp</dimen>
+    <dimen name="txt_large">@dimen/_20sdp</dimen>
+    <dimen name="txt_Heading">@dimen/_14sdp</dimen>
+    <dimen name="txt_normal">@dimen/_12sdp</dimen>
+    <dimen name="txt_small">@dimen/_12sdp</dimen>
+    <dimen name="txt_very_small">@dimen/_10sdp</dimen>
+
+    <!--Button size-->
+    <dimen name="btn_height">@dimen/_30sdp</dimen>
+    <dimen name="btn_width">@dimen/_100sdp</dimen>
+
+
+    <!--TextBox Height-->
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="normal_padding">10dp</dimen>
+    <dimen name="large_padding">14dp</dimen>
+    <dimen name="very_small_padding">6dp</dimen>
+    <dimen name="max_padding">24dp</dimen>
+    android:padding="10dp"
+
+
+    <dimen name="chat_item_user_image_size">@dimen/_36sdp</dimen>
+    <dimen name="chat_progress_bar_size">@dimen/_12sdp</dimen>
+
+    <dimen name="cal_text_size">@dimen/_13ssp</dimen>
+    <dimen name="button_radius">@dimen/_8sdp</dimen>
+    <dimen name="default_corner_radii">56dp</dimen>
+    <dimen name="default_badge_corner_radii">16dp</dimen>
+    <dimen name="default_nav_item_padding">12dp</dimen>
+    <dimen name="default_nav_item_text_size">@dimen/_10ssp</dimen>
+    <dimen name="default_nav_item_text_padding">8dp</dimen>
+    <dimen name="default_nav_item_title_max_width">80dp</dimen>
+    <dimen name="default_icon_size">@dimen/_18sdp</dimen>
+    <dimen name="default_nav_item_badge_padding">2dp</dimen>
+    <dimen name="default_nav_item_badge_text_size">7sp</dimen>
+    <dimen name="dashboard_icon_height">@dimen/_30sdp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="title_text_size">20dp</dimen>
+    <dimen name="size_video_item">100dp</dimen>
+    <dimen name="pen_size">5dp</dimen>
+    <dimen name="min_section_height">@dimen/_160sdp</dimen>
+
+    <dimen name="dashboard_appBar">@dimen/_55sdp</dimen>
+
+    <!--MARGIN VALUES-->
+    <!--START HERE-->
+    <dimen name="user_detail_card_elevation">@dimen/_3sdp</dimen>
+
+    <dimen name="margin">@dimen/_16sdp</dimen>
+
+    <dimen name="medLMargin">@dimen/_12sdp</dimen>
+    <dimen name="medHMargin">@dimen/_20sdp</dimen>
+
+    <dimen name="smallestMargin">@dimen/_6sdp</dimen>
+    <dimen name="smallMargin">@dimen/_8sdp</dimen>
+    <dimen name="tiny_margin_form_et_top">@dimen/_8sdp</dimen>
+    <dimen name="bigMargin">@dimen/_24sdp</dimen>
+
+    <dimen name="minMargin">@dimen/_4sdp</dimen>
+    <dimen name="maxMargin">@dimen/_28sdp</dimen>
+    <!--END HERE-->
+    <!--MARGIN VALUES-->
+
+    <!--PADDING VALUES-->
+    <!--START HERE-->
+    <dimen name="padding">@dimen/_16sdp</dimen>
+
+    <dimen name="medLPadding">@dimen/_12sdp</dimen>
+    <dimen name="medHPadding">@dimen/_20sdp</dimen>
+
+    <dimen name="smallPadding">@dimen/_8sdp</dimen>
+    <dimen name="bigPadding">@dimen/_24sdp</dimen>
+
+    <dimen name="minPadding">@dimen/_4sdp</dimen>
+    <dimen name="maxPadding">@dimen/_28sdp</dimen>
+    <!--END HERE-->
+    <!--PADDING VALUES-->
+
+    <!--TEXT SIZE VALUES-->
+    <!--START HERE-->
+    <dimen name="verySmallTextSize">@dimen/_10ssp</dimen>
+
+    <dimen name="smallTextSize">@dimen/_12ssp</dimen>
+    <dimen name="medTextSize">@dimen/_14ssp</dimen>
+
+    <dimen name="normalTextSize">@dimen/_16ssp</dimen>
+    <dimen name="largeTextSize">@dimen/_18ssp</dimen>
+
+    <dimen name="extraLargeTextSize">@dimen/_20ssp</dimen>
+    <!--END HERE-->
+    <!--TEXT SIZE VALUES-->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">150dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="detailIconSize">@dimen/_48sdp</dimen>
+    <dimen name="heading_text">14sp</dimen>
+    <dimen name="input_and_textview">@dimen/_25sdp</dimen>
+
+</resources>

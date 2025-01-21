@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">#00a153</color>
+    <color name="colorPrimary">#6200EE</color> <!-- Light Mode -->
+    <color name="colorPrimaryNight">#BB86FC</color> <!-- Dark Mode -->
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+    <color name="_open">#FFFFFF</color>
+    <color name="colorAccent">#00B69A</color>
+    <color name="colorToolbar">#fec036</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="button">#00C9A9</color>
+    <color name="green">#00a153</color>
+    <color name="transparent">#FFFFFF</color>
+    <color name="grey">#8d8d8d</color>
+    <color name="bg_grey">#eaeaea</color>
+    <color name="red">#CB2732</color>
+    <color name="blue">#0F72BC</color>
+
+</resources>

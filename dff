@@ -1,0 +1,29 @@
+[33mcommit 12176cffa54dc489009eb67ebccc608a01803e86[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Mahesh Kumar <mrntz2019@gmail.com>
+Date:   Tue Apr 2 18:35:59 2024 +0530
+
+    Suggestion functionality has been completed
+
+[33mcommit 75d7d0a456de3ad7685d6f1dc502cd4d0e73b927[m
+Author: Mahesh Kumar <mrntz2019@gmail.com>
+Date:   Thu Mar 28 19:09:50 2024 +0530
+
+    In this commit, I have been implemented the Image selection(one to one) and de-selection), along with that octa-stream for fetching the images has been implemented in the ObservationDetailsVM class(Commented)
+
+[33mcommit 32cfbd8c98c00229d9db8bf5fa7c5aa4a53c3692[m
+Author: Mahesh Kumar <mrntz2019@gmail.com>
+Date:   Tue Mar 26 10:32:27 2024 +0530
+
+    Remote work(Delhi)
+
+[33mcommit 01179b82bfd57582d3ca2e92bf07bb9c72d3b526[m
+Author: Mahesh Kumar <mrntz2019@gmail.com>
+Date:   Wed Mar 20 19:05:55 2024 +0530
+
+    Project setup
+
+[33mcommit 039404e2a9d6942be507607767e8a9f7bfdaf0b9[m
+Author: Mr Dev <mrkitlabs@gmail.com>
+Date:   Wed Mar 20 13:34:03 2024 +0000
+
+    Initial commit
